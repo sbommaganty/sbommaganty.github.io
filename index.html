@@ -50,13 +50,24 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 35px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: tomato;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.prev{
+	height: 10%;
+  width: 45px;
+ 
+
+}
+.next{
+	height: 10%;
+  width: 45px;
 }
 
 .active {
@@ -89,9 +100,9 @@ img {vertical-align: middle;}
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.html">Swamynathan Bommaganty</a></h1><br>
+							<h1><a href="index.html">Hey there ! I'm Swamynathan Bommaganty</a></h1><br>
 							<img src="images/profile.jpg" alt="Avatar" style="width:200px">
-							<p>Mobile Developer</p>
+							<p>Full Stack Developer</p>
 						</div>
 
 				 
@@ -116,10 +127,10 @@ img {vertical-align: middle;}
 					<div class="container">
 							<section id="features"><br>
 								<div class="feature-list">
-									<div class="row">
+									<!-- <div class="row"> -->
 									  <div class="col-12">
-										<section>
-										  <table>
+										<!-- <section> -->
+										  <table style="align-self: flex-start;">
 											<tbody>
 											  <tr>
 												<td  style="background: none">
@@ -191,7 +202,7 @@ img {vertical-align: middle;}
 											  </tr>
 											</tbody>
 										  </table>
-										</section>
+										<!-- </section> -->
 									  </div>
 									</div>
 								  </div>
@@ -267,14 +278,13 @@ img {vertical-align: middle;}
 						</div>
 						<br>
 						<div style="text-align:center">
-							<a class="prev" onclick="plusSlides(-1)">❮</a>
+							<img class="prev" src="images/forward.png" onclick="plusSlides(1)"></img>
 							<span class="dot" onclick="currentSlide(1)"></span> 
 							<span class="dot" onclick="currentSlide(2)"></span> 
 							<span class="dot" onclick="currentSlide(3)"></span>
 							<span class="dot" onclick="currentSlide(4)"></span> 
 							<span class="dot" onclick="currentSlide(5)"></span> 
-		 
-							<a class="next" onclick="plusSlides(1)">❯</a>
+		 					<img class="next"  src="images/backward.png" onclick="plusSlides(-1)"></img>
 						  </div>
 						  <script>
 						  let slideIndex = 1;

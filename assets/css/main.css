@@ -176,6 +176,7 @@ input, select, textarea {
 /* Container */
 
 	.container {
+		 
 		margin: 0 auto;
 		max-width: 100%;
 		width: 68em;
@@ -206,6 +207,14 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.container {
+				width: calc(100% - 40px);
+			}
+
+		}
+
+		@media screen and (max-width: 236px) {
 
 			.container {
 				width: calc(100% - 40px);
