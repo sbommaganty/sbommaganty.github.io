@@ -182,10 +182,7 @@ input, select, textarea {
 		width: 68em;
 	}
 
-	#main2{
-      display: none;
-	}
-
+ 
 		@media screen and (max-width: 1680px) {
 
 			.container {
@@ -216,11 +213,7 @@ input, select, textarea {
 				display: none;
 				width: calc(100% - 40px);
 			}
-			#main2{
-				display: contents;
-				 
-			}
-
+		 
 
 
 		}
